@@ -1,0 +1,40 @@
+body {
+  position: relative;
+ 
+}
+
+.container {
+  background: rgba( 187, 120, 149, 0.7 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 11px );
+-webkit-backdrop-filter: blur( 11px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.edit-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  height: 25px;
+  width: 15px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.edit-user, .delete-user {
+  cursor: pointer;
+}
+
+#edit-user, #confirm-delete {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+  transition: all .4s ease-in-out;
+}
+
+#edit-form {
+  transition: all 0.5s;
+}
